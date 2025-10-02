@@ -1,0 +1,37 @@
+---Create and activate a virtual environment:
+
+python3 -m venv venv
+source venv/bin/activate   // activate it
+
+
+----Install Flask:
+
+pip install flask
+
+
+----(Optional) Save dependencies:
+
+pip freeze > requirements.txt
+
+
+---------------------------------------------------------------------------------------
+
+TO RUN LOCALLY 
+
+---In terminal, with the virtual environment activated:
+
+python app.py
+
+
+---------------------------------------------------------------------------------------
+
+TO RUN WITH Gunicorn (Production Style)  
+
+---Install Gunicorn:
+
+pip install gunicorn
+
+
+---Run the app:
+
+gunicorn app:app --workers 4 --bind 0.0.0.0:8000
