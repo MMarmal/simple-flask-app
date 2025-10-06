@@ -17,7 +17,7 @@ Install Flask within the activated environment:
 pip install flask
 ```
 
-## (Optional) Save your dependencies to a requirements file:
+## (Optional) Save dependencies to a requirements file:
 
 ```bash
 pip freeze > requirements.txt
